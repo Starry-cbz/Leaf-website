@@ -7,6 +7,8 @@ export default defineConfig({
   description: "Documentation for all KiteMC team projects",
   head: [["link", { rel: "icon", href: "https://kite.cn-nb1.rains3.com/logo.svg" }]],
 
+  outDir: 'dist',
+
   vite: {
     css: {
       preprocessorOptions: {
