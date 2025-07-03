@@ -25,22 +25,22 @@ export interface ApiBuilds {
     builds: ApiBuild[]
 }
 
-const API_BASE = "https://api.leafmc.one/v2"
+const API_BASE = "https://webapi-v2-f1g24vpky-pwowd-foxmailcoms-projects.vercel.app/v2"
 
 export async function getVersions(): Promise<string[]> {
-    const rawData = await fetch(`${API_BASE}/projects/leaf`)
+    const rawData = await fetch(`${API_BASE}/projects/SurviveX`)
     const data = await rawData.json() as ApiProject
     return data.versions.reverse()
 }
 
 export async function getBuilds(version: string): Promise<ApiBuild[]> {
-    const rawData = await fetch(`${API_BASE}/projects/leaf/versions/${version}/builds`)
+    const rawData = await fetch(`${API_BASE}/projects/SurviveX/versions/${version}/builds`)
     const data = await rawData.json() as ApiBuilds
     return data.builds.reverse()
 }
 
 export function getBuildLink(version: string, build: ApiBuild): string {
-    return `${API_BASE}/projects/leaf/versions/${version}/builds/${build.build}/downloads/${build.downloads.primary.name}`
+    return `${API_BASE}/projects/SurviveX/versions/${version}/builds/${build.build}/downloads/${build.downloads.primary.name}`
 }
 
 export function getLatestStable(versions: string[]): string {

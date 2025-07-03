@@ -6,7 +6,7 @@
     "vue": "^3.5.14"
   },
   "scripts": {
-    "dev": "vitepress dev",
+    "dev": "vitepress dev --host",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },

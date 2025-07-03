@@ -19,7 +19,7 @@ const { t } = useTranslation()
       {{ build.build }}
     </div>
 
-    <a class="download-button brand-button" :href="getBuildLink(version, build)">{{t('actions.download')}} Leaf {{version}}</a>
+    <a class="download-button brand-button" :href="getBuildLink(version, build)">{{t('actions.download')}} SurviveX {{version}}</a>
 
   </div>
 </template>
@@ -66,7 +66,7 @@ const { t } = useTranslation()
     &::before {
       content: "";
       position: absolute;
-      background: url("/logo.svg") no-repeat center;
+      background: url("https://kite.cn-nb1.rains3.com/logo.svg") no-repeat center;
       background-size: 6rem;
       opacity: 0.2;
       filter: blur(2px);

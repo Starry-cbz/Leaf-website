@@ -21,7 +21,7 @@ const props = defineProps<{
 
     <div class="commits-list">
       <div class="commit" v-for="commit in build.changes">
-        <a target="_blank" :href="'https://github.com/Winds-Studio/Leaf/commit/' + commit.commit"><code>{{ commit.commit.slice(0, 7) }}</code></a>
+        <a target="_blank" :href="'https://github.com/KiteMc/SurviveX/commit/' + commit.commit"><code>{{ commit.commit.slice(0, 7) }}</code></a>
         {{ commit.summary }}
       </div>
     </div>

@@ -3,38 +3,30 @@
 layout: home
 
 hero:
-  name: "Leaf"
-  text: "High performance Minecraft server software"
-  image: logo.svg
-  tagline: A Paper fork aim to find balance between performance, vanilla and stability
+  name: 'KiteMC'
+  text: 'Documentation'
+  tagline: 'Documentation for all KiteMC team projects'
+  image:
+    src: https://kite.cn-nb1.rains3.com/logo.svg
+    alt: SurviveX
   actions:
-    - theme: brand-button
-      text: Download
-      link: /download
-    - theme: brand-button
-      text: Docs
-      link: /docs/
-    - theme: alt
-      text: Join Discord
-      link: https://discord.gg/gfgAwdSEuM
     - theme: alt
       text: GitHub
-      link: https://github.com/Winds-Studio/Leaf
+      link: https://github.com/KiteMc/
+
 features:
-  - title: <span class='emoji'>⚡</span> Powerful and optimized
-    details: Stable and performant, it's designed to handle a large number of players
-  - title: <span class='emoji'>🧬</span> Useful and customizable
-    details: Contains many useful features and fixes, all of them can be customized in config
-  - title: <span class='emoji'>📦</span> Latest dependencies
-    details: Modern, keep dependencies up-to-date
+  - icon: S
+    title: SurviveX
+    details: SurviveX | Next-generation survival and technical server
+    link: ./docs/survivex/
+    linkText: 'Start Reading'
+  - icon: R
+    title: Rainyun
+    details: Rainyun | Next-generation cloud service provider
+    link: https://cloud.kitemc.com/
+    linkText: 'Visit Website'
 ---
 
 <script setup>
 import Contributors from '../.vitepress/theme/components/Contributors.vue'
 </script>
-
-## Team and contributors
-
-<Suspense>
-    <Contributors />
-</Suspense>

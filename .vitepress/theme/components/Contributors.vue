@@ -31,12 +31,12 @@ const loaded = ref(false);
 const websiteLoaded = ref(false);
 
 const titleCreator = (<LangString>{
-  en: "Creator of Leaf",
-  tr: "Leaf'in Yaratıcısı",
-  de: "Schöpfer von Leaf",
-  pt: "Criador do Leaf",
-  ru: "Создатель Leaf",
-  zh: "Leaf 的创建者"
+  en: "Creator of SurviveX",
+  tr: "SurviveX'in Yaratıcısı",
+  de: "Schöpfer von SurviveX",
+  pt: "Criador do SurviveX",
+  ru: "Создатель SurviveX",
+  zh: "SurviveX 的创建者"
 })[props.lang];
 const titleCoreTeam = (<LangString>{
   en: "Core team",
@@ -110,13 +110,13 @@ const allMembers = computed(() => {
 });
 
 // Fetch main repo contributors
-fetch("https://api.github.com/repos/Winds-Studio/Leaf/contributors")
+fetch("https://api.github.com/repos/Winds-Studio/SurviveX/contributors")
     .then(resp => resp.json())
     .then(data => members.value = data.map(transform))
     .finally(() => loaded.value = true);
 
 // Fetch website repo contributors
-fetch("https://api.github.com/repos/Winds-Studio/Leaf-website/contributors")
+fetch("https://api.github.com/repos/Winds-Studio/SurviveX-website/contributors")
     .then(resp => resp.json())
     .then(data => websiteMembers.value = data.map(transformWebsite))
     .finally(() => websiteLoaded.value = true);
